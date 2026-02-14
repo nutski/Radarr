@@ -1,11 +1,16 @@
 $hoverScale: 1.05;
 
 .content {
+  border-radius: 12px;
+  background-color: var(--cardBackgroundColor);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+  overflow: hidden;
   transition: all 200ms ease-in;
 
   &:hover {
     z-index: 2;
-    box-shadow: 0 0 12px var(--black);
+    box-shadow: 0 10px 24px rgb(0 0 0 / 22%);
+    transform: translateY(-2px);
     transition: all 200ms ease-in;
 
     .controls {
@@ -23,6 +28,8 @@ $hoverScale: 1.05;
   position: relative;
   display: block;
   background-color: var(--defaultColor);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
 }
 
 .overlayTitle {
@@ -43,7 +50,8 @@ $hoverScale: 1.05;
 .title {
   @add-mixin truncate;
 
-  background-color: var(--movieBackgroundColor);
+  border-top: 1px solid rgb(255 255 255 / 6%);
+  background-color: var(--cardBackgroundColor);
   text-align: center;
   font-size: $smallFontSize;
 }
@@ -81,7 +89,8 @@ $hoverScale: 1.05;
   justify-content: space-around;
   padding: 0 3px;
   height: 21px;
-  background-color: var(--movieBackgroundColor);
+  border-top: 1px solid rgb(255 255 255 / 6%);
+  background-color: var(--cardBackgroundColor);
 }
 
 .tagsList {
@@ -119,6 +128,8 @@ $hoverScale: 1.05;
   position: relative;
   display: block;
   background-color: var(--defaultColor);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
 }
 
 .nextAiring {
