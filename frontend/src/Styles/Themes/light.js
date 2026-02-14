@@ -154,7 +154,7 @@ module.exports = {
   // Card
 
   cardBackgroundColor: '#fff',
-  cardShadowColor: '#e1e1e1',
+  cardShadowColor: 'rgba(16, 24, 40, 0.26)',
   cardAlternateBackgroundColor: '#f5f5f5',
   cardCenterBackgroundColor: '#fff',
 

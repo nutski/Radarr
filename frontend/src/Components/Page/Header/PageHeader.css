@@ -4,7 +4,13 @@
   align-items: center;
   flex: 0 0 auto;
   height: $headerHeight;
-  background-color: var(--pageHeaderBackgroundColor);
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--pageHeaderBackgroundColor) 92%, var(--black) 8%),
+    var(--pageHeaderBackgroundColor)
+  );
+  border-bottom: 1px solid color-mix(in srgb, var(--borderColor) 55%, transparent);
+  box-shadow: 0 8px 18px -16px var(--cardShadowColor);
   color: var(--white);
 }
 
