@@ -2,16 +2,18 @@
   composes: container from '~Components/ProgressBar.css';
 
   border-radius: 0;
-  background-color: #5b5b5b;
+  background-color: var(--cardBackgroundColor);
   color: var(--white);
+  border-top: 1px solid rgb(255 255 255 / 6%);
 }
 
 .progressRadius {
   composes: container from '~Components/ProgressBar.css';
 
-  border-radius: 0 0 5px 5px;
-  background-color: #5b5b5b;
+  border-radius: 0;
+  background-color: var(--cardBackgroundColor);
   color: var(--white);
+  border-top: 1px solid rgb(255 255 255 / 6%);
   transition: width 200ms ease;
 }
 
