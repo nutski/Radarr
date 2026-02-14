@@ -2,7 +2,7 @@ name: build-and-push
 
 on:
   push:
-    branches: [ "devcustom" ]
+    branches: [ "devcustomui" ]
   workflow_dispatch: {}
 
 jobs:
@@ -33,4 +33,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/nutski/radarr:devcustom
+          tags: ghcr.io/nutski/radarr:devcustomui
