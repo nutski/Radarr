@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 ARG RADARR_REPO=https://github.com/nutski/Radarr.git
-ARG RADARR_BRANCH=devcustom
+ARG RADARR_BRANCH=devcustomui
 ARG RID=linux-x64
 ARG FRAMEWORK=net8.0
 
