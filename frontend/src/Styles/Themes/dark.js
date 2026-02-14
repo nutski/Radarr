@@ -153,7 +153,7 @@ module.exports = {
   // Card
 
   cardBackgroundColor: '#333333',
-  cardShadowColor: '#111',
+  cardShadowColor: 'rgba(0, 0, 0, 0.72)',
   cardAlternateBackgroundColor: '#333333',
   cardCenterBackgroundColor: '#2a2a2a',
 

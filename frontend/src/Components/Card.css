@@ -2,9 +2,11 @@
   position: relative;
   margin: 10px;
   padding: 10px;
-  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--borderColor) 60%, transparent);
+  border-radius: 8px;
   background-color: var(--cardBackgroundColor);
-  box-shadow: 0 0 10px 1px var(--cardShadowColor);
+  box-shadow: 0 12px 30px -24px var(--cardShadowColor);
+  transition: box-shadow 150ms ease, border-color 150ms ease;
   color: var(--defaultColor);
 }
 
