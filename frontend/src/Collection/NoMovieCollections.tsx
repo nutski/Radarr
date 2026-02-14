@@ -11,7 +11,7 @@ interface NoMovieCollectionsProps {
 function NoMovieCollections({ totalItems }: NoMovieCollectionsProps) {
   if (totalItems > 0) {
     return (
-      <div>
+      <div className={styles.emptyStateCard}>
         <div className={styles.message}>
           {translate('AllCollectionsHiddenDueToFilter')}
         </div>
@@ -20,19 +20,21 @@ function NoMovieCollections({ totalItems }: NoMovieCollectionsProps) {
   }
 
   return (
-    <div>
+    <div className={styles.emptyStateCard}>
       <div className={styles.message}>{translate('NoCollections')}</div>
 
-      <div className={styles.buttonContainer}>
-        <Button to="/add/import" kind={kinds.PRIMARY}>
-          {translate('ImportExistingMovies')}
-        </Button>
-      </div>
+      <div className={styles.actions}>
+        <div className={styles.buttonContainer}>
+          <Button to="/add/import" kind={kinds.PRIMARY}>
+            {translate('ImportExistingMovies')}
+          </Button>
+        </div>
 
-      <div className={styles.buttonContainer}>
-        <Button to="/add/new" kind={kinds.PRIMARY}>
-          {translate('AddNewMovie')}
-        </Button>
+        <div className={styles.buttonContainer}>
+          <Button to="/add/new" kind={kinds.PRIMARY}>
+            {translate('AddNewMovie')}
+          </Button>
+        </div>
       </div>
     </div>
   );
