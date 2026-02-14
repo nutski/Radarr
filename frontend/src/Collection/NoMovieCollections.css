@@ -1,11 +1,32 @@
+.emptyStateCard {
+  margin: 24px auto;
+  padding: 24px;
+  max-width: 560px;
+  border: 1px solid color-mix(in srgb, var(--borderColor) 75%, transparent);
+  border-radius: 12px;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--cardBackgroundColor) 94%, #fff 6%),
+    color-mix(in srgb, var(--cardBackgroundColor) 97%, #000 3%)
+  );
+  box-shadow: 0 10px 24px color-mix(in srgb, #000 18%, transparent);
+}
+
 .message {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .buttonContainer {
-  margin-top: 20px;
-  text-align: center;
+  display: flex;
 }
